@@ -1,0 +1,291 @@
+/* General Reset */
+@font-face {
+    font-family: Montserrat-light;
+    src: url(../Montserrat/static/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-medium;
+    src: url(../Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(../Montserrat/static/Montserrat-Bold.ttf);
+}
+
+body,
+h1,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Montserrat-medium;
+
+}
+
+body {
+    background: #152238;
+
+    color: #333;
+}
+
+header {
+    background: #02162b;
+    /* Dark theme */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    /* Stays at top */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: "";
+    background-color: #4e0707;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4e0707;
+}
+
+body .logo h1 span {
+    color: #4e0707;
+    font-family: Montserrat-light;
+}
+
+.logo-name nav ul {
+    display: flex;
+    gap: 50px;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #61dafb;
+    /* Light blue hover effect */
+}
+
+/* Responsive Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+.mainContainer {
+    margin-top: 30px;
+}
+
+.mainPart {
+    text-align: center;
+    color: white;
+    font-family: Montserrat-bold;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.mainPart::before {
+    content: "";
+    background-color: #4e0707;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4e0707;
+}
+
+.secondPart {
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+.secondPart p {
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.projectOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.projectOne .containerOne {
+
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Adjust width */
+    max-width: 600px;
+
+
+
+}
+
+.projectOne .containerOne .firstImage img {
+    width: 100%;
+}
+
+.projectOne .containerOne .firstOne h4 {
+    color: #4e0707;
+    font-family: Montserrat-bold;
+    font-size: 20px;
+}
+
+.projectOne .containerOne .firstOne p {
+    color: #02162b;
+    font-family: Montserrat-medium;
+    font-size: 15px;
+}
+
+
+
+.projectTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.projectTwo .containerTwo {
+
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Adjust width */
+    max-width: 600px;
+
+
+
+}
+
+.projectTwo .containerTwo .secondImage img {
+    width: 100%;
+}
+
+.projectTwo .containerTwo .firstTwo h4 {
+    color: #4e0707;
+    font-family: Montserrat-bold;
+    font-size: 20px;
+}
+
+.projectTwo .containerTwo .firstTwo p {
+    color: #02162b;
+    font-family: Montserrat-medium;
+    font-size: 15px;
+}
+
+
+.projectThree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.projectThree .containerThree {
+
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Adjust width */
+    max-width: 600px;
+
+
+
+}
+
+.projectThree .containerThree .thirdImage img {
+    width: 100%;
+}
+
+.projectThree .containerThree .firstThree h4 {
+    color: #4e0707;
+    font-family: Montserrat-bold;
+    font-size: 20px;
+}
+
+.projectThree .containerThree .firstThree p {
+    color: #02162b;
+    font-family: Montserrat-medium;
+    font-size: 15px;
+}
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+#scrollToTopBtn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #1e2a3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #34495e;
+}

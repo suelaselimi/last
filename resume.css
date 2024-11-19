@@ -1,0 +1,409 @@
+/* General Reset */
+@font-face {
+    font-family: Montserrat-light;
+    src: url(../Montserrat/static/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-medium;
+    src: url(../Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(../Montserrat/static/Montserrat-Bold.ttf);
+}
+
+body,
+h1,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Montserrat-medium;
+
+}
+
+body {
+    background: #152238;
+
+    color: #333;
+}
+
+header {
+    background: #02162b;
+    /* Dark theme */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    /* Stays at top */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: "";
+    background-color: #4e0707;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4e0707;
+}
+
+body .logo h1 span {
+    color: #4e0707;
+    font-family: Montserrat-light;
+}
+
+.logo-name nav ul {
+    display: flex;
+    gap: 50px;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #61dafb;
+    /* Light blue hover effect */
+}
+
+/* Responsive Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+.mainContainer {
+    margin-top: 30px;
+}
+
+.mainPart {
+    text-align: center;
+    color: white;
+    font-family: Montserrat-bold;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.mainPart::before {
+    content: "";
+    background-color: #4e0707;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4e0707;
+}
+
+.secondPart {
+    display: flex;
+    justify-content: center;
+    gap: 35%;
+    margin-top: 30px;
+}
+
+.secondPart h1 {
+    font-family: Montserrat-medium;
+    color: #ffffff;
+}
+
+.secondPart button {
+    border: 1px solid #4e0707;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #4e0707;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Montserrat-light;
+}
+
+.mainEducation {
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    /* align-items: center; */
+    /* Center vertically */
+    /* height: 100vh; */
+}
+
+.edc {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Adjust width */
+    max-width: 600px;
+    /* Limit maximum width */
+    /* text-align: center; */
+}
+
+.mainEducation h4 {
+    color: #152238;
+    font-family: Montserrat-medium;
+
+}
+
+.mainEducation h3 {
+    color: #4e0707;
+    font-family: Montserrat-bold;
+    font-size: 20px;
+}
+
+.mainEducation h5 {
+    color: #02162b;
+    font-family: Montserrat-light;
+    font-size: 10px;
+}
+
+.secdonfEducation {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondEdc {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Adjust width */
+    max-width: 600px;
+}
+
+.secdonfEducation h4 {
+    color: #152238;
+    font-family: Montserrat-medium;
+
+}
+
+.secdonfEducation h3 {
+    color: #4e0707;
+    font-family: Montserrat-bold;
+    font-size: 20px;
+}
+
+.secdonfEducation h5 {
+    color: #02162b;
+    font-family: Montserrat-light;
+    font-size: 10px;
+}
+
+
+.thirdofEducation {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirdEdc {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Adjust width */
+    max-width: 600px;
+}
+
+.thirdofEducation h4 {
+    color: #152238;
+    font-family: Montserrat-medium;
+
+}
+
+.thirdofEducation h3 {
+    color: #4e0707;
+    font-family: Montserrat-bold;
+    font-size: 20px;
+}
+
+.thirdofEducation h5 {
+    color: #02162b;
+    font-family: Montserrat-light;
+    font-size: 10px;
+}
+
+
+.fourthofEducation {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourthEdc {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Adjust width */
+    max-width: 600px;
+}
+
+.fourthofEducation h4 {
+    color: #152238;
+    font-family: Montserrat-medium;
+
+}
+
+.fourthofEducation h3 {
+    color: #4e0707;
+    font-family: Montserrat-bold;
+    font-size: 20px;
+}
+
+.fourthofEducation h5 {
+    color: #02162b;
+    font-family: Montserrat-light;
+    font-size: 10px;
+}
+
+.skillset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Adjust width */
+    max-width: 600px;
+
+}
+
+.container .listing {
+    display: flex;
+    gap: 35px;
+    margin-left: 10px;
+}
+
+.container .listing ul li {
+    list-style-type: square;
+    font-family: Montserrat-medium;
+    padding: 5px;
+    color: #02162b;
+    font-size: 15px;
+}
+
+.professionalSkillset h4 {
+    font-family: Montserrat-Bold;
+    font-size: 30px;
+    color: #4e0707;
+
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.containerr .languagess {
+    display: flex;
+    gap: 35px;
+    margin-left: 10px;
+}
+
+.containerr .languagess ul li {
+    list-style-type: square;
+    font-family: Montserrat-medium;
+    padding: 5px;
+    color: #02162b;
+    font-size: 15px;
+}
+
+.containerr {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Adjust width */
+    max-width: 600px;
+}
+
+.containerr h4 {
+    font-family: Montserrat-Bold;
+    font-size: 30px;
+    color: #4e0707;
+}
+
+/* Reset some basic styles */
+* {
+
+    box-sizing: border-box;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+#scrollToTopBtn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #1e2a3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #34495e;
+}

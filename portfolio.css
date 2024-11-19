@@ -1,0 +1,258 @@
+/* General Reset */
+@font-face {
+    font-family: Montserrat-light;
+    src: url(../Montserrat/static/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-medium;
+    src: url(../Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(../Montserrat/static/Montserrat-Bold.ttf);
+}
+
+body,
+h1,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Montserrat-medium;
+
+}
+
+body {
+    background: #152238;
+
+    color: #333;
+}
+
+header {
+    background: #02162b;
+    /* Dark theme */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    /* Stays at top */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: "";
+    background-color: #4e0707;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4e0707;
+}
+
+body .logo h1 span {
+    color: #4e0707;
+    font-family: Montserrat-light;
+}
+
+.logo-name nav ul {
+    display: flex;
+    gap: 50px;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #61dafb;
+    /* Light blue hover effect */
+}
+
+/* Responsive Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+.first-row::before {
+    content: "";
+    background-color: #02162b;
+    width: 600px;
+    height: 85%;
+    position: absolute;
+    z-index: -1;
+    border: 1px solid #02162b;
+}
+
+.first-row .row {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 30px;
+
+
+}
+
+/* Ensure only About Me link is styled blue */
+#nav-menu a.about-me-link {
+    color: blue;
+    /* Make it blue */
+    font-weight: bold;
+    /* Optional: Highlight with bold text */
+}
+
+/* Optional: Change color on hover for all links */
+#nav-menu a:hover {
+    color: darkblue;
+}
+
+.first-row .row .col {
+
+    text-align: center;
+    padding: 30px;
+    border: 2px solid #02162b;
+    background-color: #02162b;
+    /* transform: translate(0%, 25%); */
+
+    box-shadow: -5px 6px 13px -4px rgba(0, 0, 0, 0.82);
+
+}
+
+
+.first-row .row .col h1 {
+    font-family: Montserrat-bold;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.myself {
+    padding: 50px 0;
+    /* Full-page section with a gradient background */
+
+
+
+}
+
+.first-row .row .col-two {
+    background-color: #152238;
+    padding: 20px;
+
+}
+
+.first-row .row .col-two h1 {
+    font-size: 70px;
+    font-family: Montserrat-bold;
+    color: #ffffff;
+}
+
+.first-row .row .col-two h4 {
+    font-size: 20px;
+    font-family: Montserrat-medium;
+    color: #ffffff;
+}
+
+
+
+.first-row .row .col h2 {
+    font-family: Montserrat-light;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.first-row img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.bottomLine {
+    border-bottom: 2px solid #3f1cdd;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.resumeButton {
+    text-decoration: none;
+    border: 2px solid #4e0707;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #4e0707;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.projectButton {
+    text-decoration: none;
+    border: 2px solid #000000;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.col-two p {
+    font-family: Montserrat-light;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.icons {
+    border: 1px solid #152238;
+    background-color: #ffffff;
+
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #24292e;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border-radius: 5px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
